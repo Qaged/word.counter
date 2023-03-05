@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Colors
+$prime: #ffffff;
+$second: #dcdcdc;
+
+$highlight: #1d4e89;
+$disabled: #172f48;
+
+$warn: #984848;
+$correct: #4f9848;
+
+// Mixins
+@mixin flexbox($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Font
+$font: "Roboto", sans-serif;

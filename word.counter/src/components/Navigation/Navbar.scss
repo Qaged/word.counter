@@ -1,0 +1,22 @@
+@import "../../_presets.scss";
+
+$navhigh: 80px;
+
+.Navbar {
+  height: $navhigh;
+
+  @include flexbox(row, flex-start, center);
+  font-family: $font;
+
+  nav {
+    p {
+      font-size: 36px;
+      margin: 0 0 0 15px;
+
+      span {
+        color: $highlight;
+        font-size: 64px;
+      }
+    }
+  }
+}
