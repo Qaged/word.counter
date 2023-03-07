@@ -9,15 +9,21 @@ const WordLimitForm = (props) => {
 
             <form>
                 {/* Recommended words */}
-                <label>Recommended words</label>
-                <input type="text" placeholder="100"/>
+                <div className={"container c1"}>
+                    <label>Recommended words: </label>
+                    <input type="number" placeholder="100"/>
+                </div>
+
 
                 {/* Maximal words */}
-                <label>Maximal words</label>
-                <input type="text" placeholder="150"/>
+                <div className={"container c2"}>
+                    <label>Maximal words: </label>
+                    <input type="number" placeholder="150"/>
+                </div>
+
 
                 {/* Submit button */}
-                <button>Apply</button>
+                <button type={"submit"}>Apply</button>
             </form>
         </div>
     );

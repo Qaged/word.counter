@@ -1,0 +1,73 @@
+@import "../Sidebar.scss";
+
+.input-form {
+  .title {
+    @include title;
+    margin-bottom: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 15px;
+
+      input {
+        width: 45px;
+        height: 25px;
+        padding: 10px;
+        margin-top: -5px;
+        margin-left: 10px;
+
+        border: 1px solid $second;
+        border-radius: 10px;
+
+        background-color: $prime;
+        color: $highlight;
+
+        font-family: $font;
+        font-size: 24px;
+
+        outline: none;
+        overflow: auto;
+      }
+
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    button {
+      width: 150px;
+      height: auto;
+      padding: 5px;
+
+      background: none;
+      color: $highlight;
+      border-radius: 10px;
+      border: 2px solid $highlight;
+
+      font-size: 24px;
+
+      cursor: pointer;
+
+      transition: color, background-color 0.2s ease
+    }
+
+    button:hover {
+        background-color: $highlight;
+        color: $prime;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../Sidebar.scss";
+
+.word-counter {
+  .title {
+    @include title;
+    margin-bottom: -15px;
+  }
+
+  .counter {
+    span {
+      color: $highlight;
+      font-weight: bold;
+    }
+  }
+}
