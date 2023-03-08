@@ -10,6 +10,12 @@
     display: flex;
     flex-direction: column;
 
+    width: 350px;
+    padding: 20px;
+
+    background-color: rgba($second, 0.4);
+    border-radius: 15px;
+
     .container {
       display: flex;
       flex-direction: row;
@@ -62,12 +68,19 @@
 
       cursor: pointer;
 
-      transition: color, background-color 0.2s ease
-    }
+      transition: color, background-color 0.2s ease;
 
-    button:hover {
+      &:hover {
         background-color: $highlight;
         color: $prime;
+      }
+      &:disabled {
+        cursor: not-allowed;
+
+        background-color: $disabled;
+        border: 2px solid $disabled;
+        color: $prime;
+      }
     }
   }
 }

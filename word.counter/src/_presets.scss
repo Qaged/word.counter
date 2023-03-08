@@ -10,8 +10,8 @@ $second: #dcdcdc;
 $highlight: #1d4e89;
 $disabled: #172f48;
 
-$warn: #984848;
-$correct: #4f9848;
+$error: #bd4646;
+$correct: #48ad41;
 
 // Mixins
 @mixin flexbox($direction, $justify, $align) {

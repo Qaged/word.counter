@@ -1,0 +1,19 @@
+@import "../../../../_presets.scss";
+
+.notification {
+  background-color: lighten($second, 10%);
+
+  height: auto;
+  width: 80%;
+  padding: 3px 3px 3px 10px;
+  margin-bottom: 20px;
+
+  border-radius: 15px;
+
+  &.error {
+    border: 3px solid $error;
+  }
+  &.correct {
+    border: 3px solid $correct;
+  }
+}
